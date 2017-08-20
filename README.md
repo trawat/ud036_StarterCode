@@ -40,9 +40,32 @@ _For example_
 First, create an entry as below -
 
 ```
-['movie_name', 'movie_banner_image_location','movie_trailor_video_location']
+['my_movie_name', 'my_movie_banner_image_location','my_movie_trailor_video_location']
 ```
 above, all three inputs should be inside single quotes. Movie banner image and its trailor video can be publicly accessible URL or absolute path on your local machine.
+
+Then, add this entry to `movie_data` or replace any existing entry.
+
+_Before modification_
+
+```
+movie_data = [
+              ['movie1_name', 'movie1_banner_image', 'movie1_trailor_path'],
+              ['movie2_name', 'movie2_banner_image', 'movie2_trailor_path'],
+              ['movie3_name', 'movie3_banner_image', 'movie3_trailor_path']
+             ]
+```
+
+_After modification (Replacing an existing entry)_
+
+```
+movie_data = [
+              ['my_movie_name', 'my_movie_banner_image_location','my_movie_trailor_video_location'],
+              ['movie2_name', 'movie2_banner_image', 'movie2_trailor_path'],
+              ['movie3_name', 'movie3_banner_image', 'movie3_trailor_path']
+             ]
+```
+
 
 _Sample entry_
 ```
